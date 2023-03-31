@@ -1,0 +1,115 @@
+:root {
+    font-family: 'Lora', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.logo {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 15px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    display: inline-block;
+    padding: 20px;
+    font-size: 2rem;
+    width: 80%;
+    border: 1px solid #dcdcdc;
+    font-family: inherit;
+    border-radius: 20px;
+}
+
+.input:hover {
+    background-color: #E4EDDA;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 2rem;
+    width: 18%;
+    border: none;
+    border-radius: 20px;
+    background: #D2DBCA;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #90DB6D;
+    
+}
+
+.tasks {
+margin-top: 20px;
+border: 1px solid #ccc;
+padding: 10px;
+border-radius: 15px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;
+    border-bottom: 1px dashed #ccc;
+}
+
+.task:last-child {
+    border-bottom: none;
+}
+
+.task:hover {
+    background: #EFF9E5;
+}
+
+.err, 
+.suc {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.err {
+    color: red;    
+}
+
+.suc {
+    color: green;
+}
+
+.delete {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    background: red;
+    color: white;
+}
+
+.done,
+.undone {
+    color: black;
+    text-decoration: none;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}

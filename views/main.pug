@@ -1,0 +1,24 @@
+extends layout.pug
+
+block #1
+    if error 
+     p.err The field is empty!
+
+    if success  
+     p.suc Task is added successfully!
+
+    form.form(action='/add' method = 'POST')
+        input.input(type='text' placeholder = 'Your Task.....' name = "tasks")
+        button.btn Add
+
+    div.tasks
+        if tasks.length
+            each task in tasks 
+                p.task
+                    if task.done
+                     a.done(href = `/${ task.id }/update`) #{ task.caption }
+                    else
+                     a.undone(href = `/${ task.id }/update`) #{ task.caption } 
+                    a.delete(href = `/${ task.id }/delete`) Delete
+        else
+         p.task No tasks are available!      
