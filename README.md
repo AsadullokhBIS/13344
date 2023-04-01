@@ -22,5 +22,3 @@ node webapp
 - express
 
 # Glitch link
-
-https://grove-plaid-road.glitch.me/

@@ -9,7 +9,7 @@ block #1
 
     form.form(action='/add' method = 'POST')
         input.input(type='text' placeholder = 'Your Task.....' name = "tasks")
-        button.btn Add
+        button.btn Create
 
     div.tasks
         if tasks.length
@@ -19,6 +19,6 @@ block #1
                      a.done(href = `/${ task.id }/update`) #{ task.caption }
                     else
                      a.undone(href = `/${ task.id }/update`) #{ task.caption } 
-                    a.delete(href = `/${ task.id }/delete`) Delete
+                    a.delete(href = `/${ task.id }/delete`) Remove
         else
          p.task No tasks are available!      
